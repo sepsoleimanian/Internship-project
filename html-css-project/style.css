@@ -1,0 +1,309 @@
+/* CSS RESET  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: #e5e5e5;
+}
+
+a:active {
+  color: purple;
+  background-color: #e5e5e5;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+.header__ul {
+  display: flex;
+  list-style-type: none;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.header__ul li {
+  display: inline-block;
+  width: 100%;
+}
+
+.header__ul li a {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;  
+}
+
+.main__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./imges/Banner.png);
+  background-size: cover;
+  height: 300px;
+}
+
+.banner__title {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.banner__text {
+  width: 50%;
+  text-align: center;
+}
+
+.section__one {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 45px;
+  gap: 150px;
+  margin-top: 70px;
+}
+
+.col-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-one__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;  
+}
+
+.col-one__details img {
+    
+}
+
+.col-one__details h2 {
+  font-size: 2rem;
+}
+
+.col-one_title {
+  margin-left: 10px;
+}
+
+.col-one__text {
+  margin-bottom: 20px;
+}
+
+.down__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./imges/Banner.png);
+  background-size: cover;
+  height: 150px;
+  margin:  85px 45px;
+}
+
+.down__banner__title {
+  display: flex;
+  font-size: 4rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.middle__page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 45px;
+}
+
+.box {
+  display: flex;
+  flex: 2 1 auto;
+  width: 100%;
+  max-width: calc(50% - 1.5rem);
+  height: auto;
+  border: 2px solid #e5e5e5;
+  padding: 1rem;
+}
+
+.box__heading {
+  color: rgb(53, 108, 226);
+  padding: 0.5rem;
+}
+
+.box__content {
+  padding: 0.5rem;
+}
+
+.photo {
+  background-color: #e5e5e5;
+  height: auto;
+  width: 100%;
+  max-width: 120px;
+}
+
+.our-company {
+  margin: 85px 0;
+  padding: 0 45px;
+}
+
+.our-company_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.our-company_details {
+  max-width: 500px;
+  width: 100%;
+}
+
+.our-company_img img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+
+.our-company_title {
+
+}
+
+.our-company_text {
+
+}
+
+.our-company_btn {
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  border: 1px solid #e5e5e5;
+  color: #000;
+  margin: 0 0 0 auto;
+  width: 120px;
+  text-align: center;
+}
+
+/* start tabs */
+.tabs {
+  width: 300px;
+  border: 1px solid #d9d9d9;
+}
+ul.tabHead, ul.tabBody {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.tabHead {
+  display: flex;
+}
+.tabHead li {
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+.tabHead li.open {
+  background: #d9d9d9;
+}
+
+.tabBody li {
+  display: none;
+  padding: 30px 20px;
+  max-height: 300px; overflow: auto; /* optional */
+} 
+.tabBody li.open { display: block; }
+/* end tabs */
+
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.contact-us_info {
+ width: 50%;
+}
+
+.contact-us_info img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us_form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 80px;
+}
+
+.contact-us_form h2 {
+  text-align: right;
+}
+
+.contact-us_form input {
+  padding: 15px 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.contact-us_form textarea {
+  padding: 15px 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.contact-us_form button {
+  width: 120px;
+  padding: 10px 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+
+.contact-us_btn-wrapper {
+  text-align: right;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+/* media queries(responsive) */
+@media only screen and (max-width: 920px) {
+  .box {
+    max-width: calc(100% - 1.5rem);
+  }
+
+  .our-company_info {}
+}
